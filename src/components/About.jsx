@@ -7,7 +7,7 @@ const About = () => {
     const [hoveredWord, setHoveredWord] = React.useState(null);
 
     const description = t('about.description');
-    const words = description.split(' ');
+    const paragraphs = description.split('\n\n');
 
     return (
         <section id="about" className="min-h-screen flex items-center bg-dark py-32">
@@ -18,26 +18,33 @@ const About = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="text-white text-2xl md:text-3xl lg:text-4xl leading-relaxed text-center font-light"
+                    className="text-white text-2xl md:text-3xl lg:text-4xl leading-relaxed text-center font-light space-y-8"
                 >
-                    {words.map((word, index) => (
-                        <motion.span
-                            key={index}
-                            className="inline-block mr-2 md:mr-3 cursor-default transition-all duration-300"
-                            onMouseEnter={() => setHoveredWord(index)}
-                            onMouseLeave={() => setHoveredWord(null)}
-                            whileHover={{
-                                scale: 1.1,
-                                color: '#FFA500',
-                            }}
-                            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
-                            style={{
-                                display: 'inline-block',
-                            }}
-                        >
-                            {word}
-                        </motion.span>
-                    ))}
+                    {paragraphs.map((paragraph, pIndex) => {
+                        const words = paragraph.split(' ');
+                        return (
+                            <div key={pIndex}>
+                                {words.map((word, index) => (
+                                    <motion.span
+                                        key={`${pIndex}-${index}`}
+                                        className="inline-block mr-2 md:mr-3 cursor-default transition-all duration-300"
+                                        onMouseEnter={() => setHoveredWord(`${pIndex}-${index}`)}
+                                        onMouseLeave={() => setHoveredWord(null)}
+                                        whileHover={{
+                                            scale: 1.1,
+                                            color: '#FFA500',
+                                        }}
+                                        transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+                                        style={{
+                                            display: 'inline-block',
+                                        }}
+                                    >
+                                        {word}
+                                    </motion.span>
+                                ))}
+                            </div>
+                        );
+                    })}
                 </motion.div>
             </div>
         </section>
