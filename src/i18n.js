@@ -1,5 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 const resources = {
     es: {
@@ -17,7 +18,7 @@ const resources = {
             },
             about: {
                 name: 'ENRIC COROMINAS',
-                description: "Soy Enric Corominas (o Heini), una persona bastante inquieta a la que le gusta hacer y probar cosas nuevas. Me muevo en todo tipo de proyectos, pero sobre todo del ámbito digital: webs, web apps, aplicaciones móviles, ecommerce, etc. ¡Todo lo que se me pasa por la cabeza, lo pruebo!\n\n¡Creo firmemente que salir de la zona de confort es la mejor manera de crecer como persona, y que lo peor que puede pasar si te atreves a hacer cosas es que aprendas!",
+                description: "Soy Enric Corominas (o Heini), una persona bastante inquieta a la que le gusta hacer y probar cosas nuevas. Me muevo en todo tipo de proyectos, pero sobre todo del ámbito digital: webs, web apps, aplicaciones móviles, ecommerce, etc. ¡Todo lo que se me pasa por la cabeza, lo pruebo!\n\n¡Creo firmamente que salir de la zona de confort es la mejor manera de crecer como persona, y que lo peor que puede pasar si te atreves a hacer cosas es que aprendas!",
                 button: 'Sobre mí',
             },
             projects: {
@@ -122,11 +123,16 @@ const resources = {
 };
 
 i18n
+    .use(LanguageDetector)
     .use(initReactI18next)
     .init({
         resources,
-        lng: 'ca',
-        fallbackLng: 'ca',
+        fallbackLng: 'en',
+        supportedLngs: ['ca', 'es', 'en'],
+        detection: {
+            order: ['navigator', 'htmlTag', 'path', 'subdomain'],
+            caches: ['localStorage'],
+        },
         interpolation: {
             escapeValue: false,
         },
