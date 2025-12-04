@@ -1,7 +1,7 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Globe } from 'lucide-react';
+import heiniLogo from '../assets/heini-coro-logo.png';
 
 const Navigation = () => {
     const { t, i18n } = useTranslation();
@@ -48,7 +48,7 @@ const Navigation = () => {
                         className="flex items-center"
                     >
                         <img
-                            src="/src/assets/heini-coro-logo.png"
+                            src={heiniLogo}
                             alt="Heini Coro"
                             className="h-8 w-auto"
                         />

@@ -3,6 +3,10 @@ import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
 import AnimatedGradient from './AnimatedGradient';
 import AnimatedBackground from './AnimatedBackground';
+import project1 from '../assets/WhatsApp Image 2025-11-26 at 17.53.32.jpeg';
+import project2 from '../assets/WhatsApp Image 2025-11-26 at 17.54.46.jpeg';
+import project3 from '../assets/WhatsApp Image 2025-11-26 at 18.04.13.jpeg';
+import project4 from '../assets/WhatsApp Image 2025-11-26 at 18.04.17.jpeg';
 
 const Hero = () => {
     const { t } = useTranslation();
@@ -20,10 +24,10 @@ const Hero = () => {
     }, []);
 
     const projects = [
-        { id: 1, image: '/src/assets/WhatsApp Image 2025-11-26 at 17.53.32.jpeg', title: 'Project 1' },
-        { id: 2, image: '/src/assets/WhatsApp Image 2025-11-26 at 17.54.46.jpeg', title: 'Project 2' },
-        { id: 3, image: '/src/assets/WhatsApp Image 2025-11-26 at 18.04.13.jpeg', title: 'Project 3' },
-        { id: 4, image: '/src/assets/WhatsApp Image 2025-11-26 at 18.04.17.jpeg', title: 'Project 4' },
+        { id: 1, image: project1, title: 'Project 1' },
+        { id: 2, image: project2, title: 'Project 2' },
+        { id: 3, image: project3, title: 'Project 3' },
+        { id: 4, image: project4, title: 'Project 4' },
     ];
 
     // Duplicate projects for seamless infinite loop
