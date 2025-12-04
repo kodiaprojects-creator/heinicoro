@@ -2,11 +2,11 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import rumateLogo from '../assets/rumate-logo.png';
-import kodiLogo from '../assets/KODI LOGO PNG NEGATIU (3).png';
+import kodiLogo from '../assets/kodi-logo.png';
 import ejerciciosLogo from '../assets/logo ejercicios.png';
 import eleusLogo from '../assets/logo eleus.png';
-import heiniLogo from '../assets/Heini Coro logo nou blanc.png';
-import financeLogo from '../assets/Logo Easy Finance Tracker.png';
+import heiniLogo from '../assets/heini-coro-logo.png';
+import financeLogo from '../assets/finance-tracker-logo.png';
 
 const Projects = () => {
     const { t } = useTranslation();

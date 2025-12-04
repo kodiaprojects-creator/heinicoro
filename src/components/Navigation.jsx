@@ -48,7 +48,7 @@ const Navigation = () => {
                         className="flex items-center"
                     >
                         <img
-                            src="/src/assets/Heini Coro logo nou blanc.png"
+                            src="/src/assets/heini-coro-logo.png"
                             alt="Heini Coro"
                             className="h-8 w-auto"
                         />
