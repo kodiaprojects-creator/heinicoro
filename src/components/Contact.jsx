@@ -9,7 +9,7 @@ const Contact = () => {
     const createRipple = useRipple();
 
     const socialLinks = [
-        { icon: Linkedin, href: '#', label: 'LinkedIn' },
+        { icon: Linkedin, href: 'https://www.linkedin.com/in/enric-corominas-gratac%C3%B3s-b83437127/', label: 'LinkedIn' },
         { icon: Instagram, href: 'https://www.instagram.com/heinicoro/', label: 'Instagram' },
         { icon: Mail, href: `mailto:${t('contact.email')}`, label: 'Email' },
     ];
