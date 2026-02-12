@@ -76,7 +76,7 @@ const Projects = () => {
     const duplicatedRow2 = [...projectsRow2, ...projectsRow2, ...projectsRow2];
 
     return (
-        <section id="projects" className="min-h-screen flex items-center bg-dark py-32">
+        <section id="projects" className="min-h-screen flex items-center bg-dark py-16">
             <div className="w-full">
                 {/* Header */}
                 <div className="max-w-7xl mx-auto px-6">
@@ -84,7 +84,7 @@ const Projects = () => {
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="mb-20"
+                        className="mb-12"
                     >
                         <div className="flex items-center gap-3 mb-6">
                             <motion.span

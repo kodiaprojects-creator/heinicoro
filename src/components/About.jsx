@@ -10,11 +10,11 @@ const About = () => {
     const paragraphs = description.split('\n\n');
 
     return (
-        <section id="about" className="min-h-screen flex items-center bg-dark py-32">
+        <section id="about" className="min-h-screen flex items-center bg-dark py-16">
             <div className="max-w-5xl mx-auto px-6 w-full">
                 {/* Title */}
                 <motion.h2
-                    className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-16 text-center"
+                    className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-10 text-center"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}

@@ -30,7 +30,7 @@ const Hero = () => {
     ];
 
     return (
-        <section className="min-h-screen flex items-center bg-dark pt-24 pb-16 relative overflow-hidden">
+        <section className="min-h-screen flex items-center bg-dark pt-16 pb-12 relative overflow-hidden">
             <AnimatedGradient />
             <div className="w-full max-w-6xl 2xl:max-w-7xl mx-auto px-6 lg:px-10 xl:px-16 relative z-10">
                 <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center lg:items-stretch justify-between">
@@ -39,7 +39,7 @@ const Hero = () => {
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="w-full lg:w-[48%]"
+                        className="w-full lg:w-[48%] order-2 lg:order-1"
                     >
                         <div className="flex gap-5 lg:gap-6">
                             {/* Columna esquerra (més amunt i més alta) */}
@@ -101,7 +101,7 @@ const Hero = () => {
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="w-full lg:w-[42%] flex flex-col justify-center lg:pl-4 xl:pl-8"
+                        className="w-full lg:w-[42%] flex flex-col justify-center lg:pl-4 xl:pl-8 order-1 lg:order-2"
                     >
                         <motion.h1
                             className="font-montserrat font-bold mb-2 leading-tight group cursor-default"

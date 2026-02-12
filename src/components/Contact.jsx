@@ -15,7 +15,7 @@ const Contact = () => {
     ];
 
     return (
-        <section id="contact" className="min-h-screen flex items-center bg-dark pt-24 pb-16">
+        <section id="contact" className="min-h-screen flex items-center bg-dark pt-16 pb-12">
             <div className="max-w-5xl mx-auto px-6 text-center w-full">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
@@ -36,7 +36,7 @@ const Contact = () => {
 
                     {/* Main Title */}
                     <motion.h2
-                        className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-16 leading-tight"
+                        className="text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-10 leading-tight"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -46,7 +46,7 @@ const Contact = () => {
                     </motion.h2>
 
                     {/* Social Icons */}
-                    <div className="flex justify-center gap-8 mb-16">
+                    <div className="flex justify-center gap-8 mb-10">
                         {socialLinks.map((social, index) => (
                             <motion.a
                                 key={index}

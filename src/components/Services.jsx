@@ -15,7 +15,7 @@ const Services = () => {
     ];
 
     return (
-        <section id="services" className="min-h-screen flex items-center bg-dark py-32">
+        <section id="services" className="min-h-screen flex items-center bg-dark py-16">
             <div className="max-w-7xl mx-auto px-6 w-full">
                 {/* Layout: left title + description, right list */}
                 <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
@@ -37,7 +37,7 @@ const Services = () => {
                                 {t('services.subtitle')}
                             </motion.span>
                         </div>
-                        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+                        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4">
                             {(() => {
                                 const title = t('services.title');
                                 const text = title.replace('?', '');
