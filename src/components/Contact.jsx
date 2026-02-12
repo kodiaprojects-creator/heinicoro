@@ -15,7 +15,7 @@ const Contact = () => {
     ];
 
     return (
-        <section id="contact" className="min-h-screen flex items-center bg-dark py-32">
+        <section id="contact" className="min-h-screen flex items-center bg-dark pt-24 pb-16">
             <div className="max-w-5xl mx-auto px-6 text-center w-full">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}

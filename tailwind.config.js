@@ -17,6 +17,7 @@ export default {
         oswald: ['Oswald', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
       },
     },
   },
