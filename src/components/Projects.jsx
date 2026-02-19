@@ -7,6 +7,7 @@ import ejerciciosLogo from '../assets/logo ejercicios.png';
 import eleusLogo from '../assets/logo eleus.png';
 import heiniLogo from '../assets/heini-coro-logo.png';
 import financeLogo from '../assets/finance-tracker-logo.png';
+import kodiaWebsLogo from '../assets/logo_blanc_kodia.svg';
 
 const Projects = () => {
     const { t } = useTranslation();
@@ -68,6 +69,14 @@ const Projects = () => {
             descriptionKey: 'projects.cards.heini',
             image: heiniLogo,
             bgColor: 'bg-dark',
+        },
+        {
+            id: 7,
+            title: 'Kodia Webs',
+            descriptionKey: 'projects.cards.kodia',
+            image: kodiaWebsLogo,
+            bgColor: 'bg-dark',
+            link: 'https://www.kodia.cat/',
         },
     ];
 

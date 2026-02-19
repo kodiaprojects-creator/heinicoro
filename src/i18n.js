@@ -53,6 +53,7 @@ const resources = {
                     finance: 'Toma el control de tus finanzas personales.',
                     rumate: 'Organiza tu piso compartido en una única app',
                     heini: 'Proyecto de creación de un web personal.',
+                    kodia: 'agència de creació de webs one page per negocis locals i online',
                 },
             },
             contact: {
@@ -112,6 +113,7 @@ const resources = {
                     finance: 'Pren el control de les teves finances personals.',
                     rumate: 'Organitza el teu pis compartit en una única app',
                     heini: 'Projecte de creació d\'un web personal.',
+                    kodia: 'agència de creació de webs one page per negocis locals i online',
                 },
             },
             contact: {
@@ -171,6 +173,7 @@ const resources = {
                     finance: 'Take control of your personal finances.',
                     rumate: 'Organize your shared apartment in a single app',
                     heini: 'Personal website creation project.',
+                    kodia: 'agència de creació de webs one page per negocis locals i online',
                 },
             },
             contact: {
