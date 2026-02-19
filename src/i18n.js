@@ -193,12 +193,26 @@ i18n
         fallbackLng: 'en',
         supportedLngs: ['ca', 'es', 'en'],
         detection: {
-            order: ['navigator', 'htmlTag', 'path', 'subdomain'],
+            // Orden de detección: primero el idioma del navegador, luego localStorage, luego htmlTag
+            order: ['navigator', 'localStorage', 'htmlTag', 'path', 'subdomain'],
+            // Guarda la preferencia del usuario en localStorage
             caches: ['localStorage'],
+            // Opciones adicionales para mejorar la detección
+            lookupLocalStorage: 'i18nextLng',
+            // Detecta el idioma del navegador correctamente
+            checkWhitelist: true,
         },
         interpolation: {
             escapeValue: false,
         },
     });
+
+// Actualiza el atributo lang del HTML cuando cambia el idioma
+i18n.on('languageChanged', (lng) => {
+    document.documentElement.lang = lng;
+});
+
+// Establece el idioma inicial del HTML
+document.documentElement.lang = i18n.language || i18n.resolvedLanguage || 'en';
 
 export default i18n;
