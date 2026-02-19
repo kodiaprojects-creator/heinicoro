@@ -30,20 +30,20 @@ const Hero = () => {
     ];
 
     return (
-        <section className="min-h-screen flex items-center bg-dark pt-16 pb-12 relative overflow-hidden">
+        <section className="min-h-screen flex items-center bg-dark pt-24 md:pt-28 lg:pt-32 pb-12 md:pb-16 lg:pb-20 relative overflow-hidden">
             <AnimatedGradient />
-            <div className="w-full max-w-6xl 2xl:max-w-7xl mx-auto px-6 lg:px-10 xl:px-16 relative z-10">
-                <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 items-center lg:items-stretch justify-between">
+            <div className="w-full max-w-6xl 2xl:max-w-7xl mx-auto px-6 md:px-8 lg:px-10 xl:px-16 relative z-10">
+                <div className="flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-20 items-center lg:items-stretch justify-between">
                     {/* Left Column - 4 Images Grid (2x2) */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="w-full lg:w-[48%] order-2 lg:order-1"
+                        className="w-full lg:w-[48%] order-2 lg:order-1 mt-4 md:mt-0"
                     >
-                        <div className="flex gap-5 lg:gap-6">
+                        <div className="flex gap-4 md:gap-5 lg:gap-6">
                             {/* Columna esquerra (més amunt i més alta) */}
-                            <div className="flex flex-col gap-5 lg:gap-6 flex-1">
+                            <div className="flex flex-col gap-4 md:gap-5 lg:gap-6 flex-1">
                                 {[projects[0], projects[2]].map((project, index) => (
                                     <motion.div
                                         key={project.id}
@@ -69,7 +69,7 @@ const Hero = () => {
                             </div>
 
                             {/* Columna dreta, desplaçada cap avall (més petita) */}
-                            <div className="flex flex-col gap-5 lg:gap-6 translate-y-8 md:translate-y-12 lg:translate-y-16 flex-1">
+                            <div className="flex flex-col gap-4 md:gap-5 lg:gap-6 translate-y-6 md:translate-y-8 lg:translate-y-12 xl:translate-y-16 flex-1">
                                 {[projects[1], projects[3]].map((project, index) => (
                                     <motion.div
                                         key={project.id}
@@ -101,10 +101,10 @@ const Hero = () => {
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="w-full lg:w-[42%] flex flex-col justify-center lg:pl-4 xl:pl-8 order-1 lg:order-2"
+                        className="w-full lg:w-[42%] flex flex-col justify-center lg:pl-4 xl:pl-8 order-1 lg:order-2 text-center lg:text-left"
                     >
                         <motion.h1
-                            className="font-montserrat font-bold mb-2 leading-tight group cursor-default"
+                            className="font-montserrat font-bold mb-3 md:mb-4 lg:mb-2 leading-tight group cursor-default"
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.5 }}
@@ -114,7 +114,7 @@ const Hero = () => {
                             }}
                         >
                             <motion.span
-                                className="text-white block text-xl md:text-2xl lg:text-3xl mb-2 font-normal transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-gray-300 group-hover:to-white uppercase"
+                                className="text-white block text-lg sm:text-xl md:text-2xl lg:text-3xl mb-2 md:mb-3 lg:mb-2 font-normal transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:via-gray-300 group-hover:to-white uppercase"
                             >
                                 {(() => {
                                     const title = t('hero.title1');
@@ -129,7 +129,7 @@ const Hero = () => {
                                 })()}
                             </motion.span>
                             <motion.span
-                                className="text-white block text-6xl md:text-7xl lg:text-8xl mr-4 md:mr-10"
+                                className="text-white block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mr-0 md:mr-4 lg:mr-10 leading-tight"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8, delay: 0.7 }}
@@ -148,8 +148,8 @@ const Hero = () => {
                             </motion.span>
                         </motion.h1>
 
-                        <div className="mt-0">
-                            <p className="text-gray-100 text-xl md:text-2xl font-sans">
+                        <div className="mt-4 md:mt-6 lg:mt-0">
+                            <p className="text-gray-100 text-base sm:text-lg md:text-xl lg:text-2xl font-sans leading-relaxed">
                                 {t('hero.subtitle')}
                             </p>
                         </div>

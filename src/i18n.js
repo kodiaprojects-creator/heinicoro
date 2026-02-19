@@ -6,21 +6,21 @@ const resources = {
     es: {
         translation: {
             nav: {
-                about: 'About',
+                about: 'Sobre mi',
                 projects: 'Proyectos',
                 cv: 'CV',
                 contact: 'Contacto',
             },
             hero: {
-                title1: '¡Hola!',
+                title1: 'Hola,',
                 title2: '¡Soy Heini!',
-                subtitle: 'Project Manager. Emprendedor. Mente inquieta.',
+                subtitle: 'Project Manager, explorador digital y mente inquieta.',
             },
             about: {
-                title: 'Sobre mí',
-                name: 'ENRIC COROMINAS',
-                description: "Soy Enric Corominas (o Heini), una persona bastante inquieta a la que le gusta hacer y probar cosas nuevas. Me muevo en todo tipo de proyectos, pero sobre todo del ámbito digital: webs, web apps, aplicaciones móviles, ecommerce, etc. ¡Todo lo que se me pasa por la cabeza, lo pruebo!\n\n¡Creo firmamente que salir de la zona de confort es la mejor manera de crecer como persona, y que lo peor que puede pasar si te atreves a hacer cosas es que aprendas!",
-                button: 'Sobre mí',
+                title: 'Sobre mi',
+                name: 'Enric Corominas',
+                description: "Soy Enric Corominas (o Heini), una persona bastante inquieta a la que le gusta hacer y probar cosas nuevas. Me muevo en todo tipo de proyectos, pero sobre todo del ámbito digital: webs, web apps, aplicaciones móviles, ecommerce, etc. ¡Todo lo que se me pasa por la cabeza, lo pruebo!\n\nCreo firmemente que salir de la zona de confort es la mejor manera de crecer como persona, y que lo peor que puede pasar si te atreves a hacer cosas es que aprendas!",
+                button: 'Sobre mi',
                 values: {
                     innovation: 'Innovación',
                     leadership: 'Liderazgo',
@@ -32,7 +32,7 @@ const resources = {
             services: {
                 subtitle: 'ÁMBITOS',
                 title: 'En qué trabajo?',
-                description: 'Acompaño a personas y equipos en la definición, diseño y lanzamiento de productes digitals. Desde la idea inicial hasta la seva posada en producció, m\'agrada estar a totes les fases del procés.\n\nCombino una visió estratègica amb un enfocament molt pràctic: prioritzar, coordinar equips i transformar idees en experiències digitals clares, útils i orientades a resultats.',
+                description: 'Acompaño a personas y equipos en la definición, diseño y lanzamiento de proyectos digitales. Desde la idea inicial hasta su puesta en producción, me gusta estar en todas las fases del proceso.\n\nCombino una visión estratégica con un enfoque muy práctico: priorizar bien, coordinar equipos y transformar ideas en experiencias digitales claras, útiles y orientadas a resultados.',
                 items: {
                     projectManagement: 'Gestión de proyectos digitales',
                     webDesign: 'Creación y diseño web',
@@ -53,7 +53,7 @@ const resources = {
                     finance: 'Toma el control de tus finanzas personales.',
                     rumate: 'Organiza tu piso compartido en una única app',
                     heini: 'Proyecto de creación de un web personal.',
-                    kodia: 'agència de creació de webs one page per negocis locals i online',
+                    kodia: 'Agencia de creación de webs one page para negocios locales y online',
                 },
             },
             contact: {
@@ -61,12 +61,17 @@ const resources = {
                 subtitle: 'Contacta conmigo',
                 email: 'info@heinicoro.com',
             },
+            languageSelector: {
+                title: 'Selecciona tu idioma',
+                subtitle: 'Elige el idioma en el que quieres ver el sitio web',
+                footer: 'Tu preferencia se guardará para futuras visitas',
+            },
         },
     },
     ca: {
         translation: {
             nav: {
-                about: 'About',
+                about: 'Sobre mi',
                 projects: 'Projectes',
                 cv: 'CV',
                 contact: 'Contacte',
@@ -121,6 +126,11 @@ const resources = {
                 subtitle: 'Contacte amb mi',
                 email: 'info@heinicoro.com',
             },
+            languageSelector: {
+                title: 'Selecciona el teu idioma',
+                subtitle: 'Tria l\'idioma en què vols veure el lloc web',
+                footer: 'La teva preferència es guardarà per futures visites',
+            },
         },
     },
     en: {
@@ -134,11 +144,11 @@ const resources = {
             hero: {
                 title1: 'Hello,',
                 title2: "I'm Heini!",
-                subtitle: 'Project Manager. Entrepreneur. Restless mind.',
+                subtitle: 'Project Manager, digital explorer and restless mind.',
             },
             about: {
                 title: 'About me',
-                name: 'ENRIC COROMINAS',
+                name: 'Enric Corominas',
                 description: "I'm Enric Corominas (or Heini), a quite restless person who likes to do and try new things. I work on all kinds of projects, but especially digital ones: websites, web apps, mobile applications, ecommerce, etc. Everything that comes to mind, I try it!\n\nI firmly believe that stepping out of your comfort zone is the best way to grow as a person, and that the worst that can happen if you dare to do things is that you learn!",
                 button: 'About me',
                 values: {
@@ -152,7 +162,7 @@ const resources = {
             services: {
                 subtitle: 'AREAS',
                 title: 'What I work on?',
-                description: 'I help people and teams shape, structure and launch digital projects. From the first idea to the moment it goes live, I like to be involved in every step of the journey.\n\nI combine a strategic mindset with a very hands-on way of working: setting the right priorities, coordinating teams and turning ideas into clear, useful and value-driven digital experiences.',
+                description: 'I help people and teams shape, structure and make digital projects a reality. From the initial idea to launch, I like to be close to the whole process so nothing is left halfway.\n\nI combine a strategic vision with a very practical way of working: prioritizing well, coordinating teams and turning ideas into clear, useful digital experiences that really add value.',
                 items: {
                     projectManagement: 'Digital project management',
                     webDesign: 'Web creation and design',
@@ -173,13 +183,18 @@ const resources = {
                     finance: 'Take control of your personal finances.',
                     rumate: 'Organize your shared apartment in a single app',
                     heini: 'Personal website creation project.',
-                    kodia: 'agència de creació de webs one page per negocis locals i online',
+                    kodia: 'One-page website creation agency for local and online businesses',
                 },
             },
             contact: {
                 title: 'Let\'s talk?',
                 subtitle: 'Contact me',
                 email: 'info@heinicoro.com',
+            },
+            languageSelector: {
+                title: 'Select your language',
+                subtitle: 'Choose the language you want to view the website in',
+                footer: 'Your preference will be saved for future visits',
             },
         },
     },

@@ -48,7 +48,7 @@ const Navigation = () => {
 
     return (
         <>
-            <div className="fixed top-0 left-0 right-0 z-50 px-6 pt-6">
+            <div className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 pt-4 sm:pt-5 md:pt-6">
                 <motion.nav
                     initial={{ y: -100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -56,7 +56,7 @@ const Navigation = () => {
                     className={`max-w-7xl mx-auto transition-all duration-300 ${scrolled
                         ? 'bg-black/40 shadow-lg backdrop-blur-2xl border border-white/10'
                         : 'bg-transparent border border-transparent'
-                        } rounded-full px-8 py-4`}
+                        } rounded-full px-4 sm:px-6 md:px-8 py-3 sm:py-3.5 md:py-4`}
                 >
                     <div className="flex items-center justify-between">
                         {/* Logo */}
@@ -69,7 +69,7 @@ const Navigation = () => {
                             <img
                                 src={heiniLogo}
                                 alt="Heini Coro"
-                                className="h-8 w-auto"
+                                className="h-6 sm:h-7 md:h-8 w-auto"
                             />
                         </motion.div>
 
@@ -149,10 +149,10 @@ const Navigation = () => {
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.3 }}
                             onClick={() => setMobileMenuOpen(true)}
-                            className="md:hidden p-2 text-white hover:text-primary transition-colors"
+                            className="md:hidden p-1.5 sm:p-2 text-white hover:text-primary transition-colors"
                             aria-label="Open menu"
                         >
-                            <Menu size={28} />
+                            <Menu size={24} className="sm:w-7 sm:h-7" />
                         </motion.button>
                     </div>
                 </motion.nav>
